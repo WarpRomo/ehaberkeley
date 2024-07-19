@@ -231,7 +231,7 @@ body{
 #whoarewe > img{
   margin-right: 5%;
   border-radius: 5%;
-  width: 30%;
+  width: 30vw;
   filter: drop-shadow(0px 0px 20px black);
   height: 20%;
   max-width: 400px;
@@ -276,7 +276,7 @@ body{
 }
 
 #whatis > img{
-  width: 25%;
+  width: 25vw;
   height: 5%;
   margin-left: 6.5%;
   border-radius: 5%;
@@ -320,7 +320,7 @@ body{
 }
 
 #whocanjoin > #backimg{
-  width: 40%;
+  width: 40vw;
   border-radius: 5%;
   filter: drop-shadow(0px 0px 20px black);
   margin-left: 30%;
