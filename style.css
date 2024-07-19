@@ -1,0 +1,698 @@
+body{
+  overflow-x: hidden;
+  margin: 0;
+}
+
+
+
+.nomouse{
+  user-select: none;
+  pointer-events: none;
+}
+
+#navBar{
+  display: flex;
+  top: 0px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*background: rgba(255,255,255,0.2);*/
+  height: 82px;
+  z-index: 2;
+  position: fixed;
+  /*box-shadow: 0px 0px 15px black;*/
+  transition: opacity 1s !important;
+}
+
+#pages{
+  width: 560px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-right: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navButton:hover{
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.navButton{
+  width: 115px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: solid 3px rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(0.1vw);
+  box-shadow: 0px 0px 10px black;
+  user-select: none;
+
+  opacity: 0.75;
+  transition: opacity 0.1s;
+  color:white;
+  text-decoration: none;
+
+}
+
+.navButton > img{
+  width: 55px;
+  height: 45px;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+#ehaLogo{
+  height: 75px;
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  opacity: 0.6;
+}
+
+#berkeleyLogo{
+  height: 50px;
+  position: absolute;
+  left: 90px;
+  top: 17px;
+}
+
+#logoText{
+  font-size: 30px;
+  margin: 0px;
+  color: white;
+  font-family: Roboto;
+  position: relative;
+  top: 28px;
+  text-align: center;
+  left: 270px;
+  opacity: 0.9;
+}
+
+#textNav{
+  position: absolute;
+  left: 0.5%;
+  top: 5px;
+}
+
+#socials{
+  position: absolute;
+  display: flex;
+  opacity: 0.75;
+  right: 20px;
+  top: 26px;
+}
+
+.socialbutton > img{
+  height: 42px;
+  margin-left: 20px;
+}
+
+.socialbutton{
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.socialbutton:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.yosemiteLayer{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin-left: 0;
+  will-change: transform;
+  filter: blur(0.3vw);
+}
+
+#yosemite1{
+  z-index: -1;
+}
+#yosemite2{
+  z-index: -2;
+}
+#yosemite3{
+  z-index: -3;
+}
+#yosemite4{
+  z-index: -4;
+}
+
+.fadein{
+  opacity: 0;
+  transition: opacity 2s !important;
+}
+
+#centerPopup{
+
+  position: absolute;
+  top: 11vw;
+  width: 100%;
+  height: 70%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+}
+
+#centerPopup > #titleText{
+  font-size: 2vw;
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-top: -2vw;
+  filter: drop-shadow(0px 0px 2px white);
+}
+
+#centerPopup > #quoteText{
+  font-size: 1.5vw;
+  color: white;
+  font-family: Roboto;
+  margin-top: -2vw;
+  filter: drop-shadow(0px 0px 5px white);
+}
+
+#centerPopup > img{
+  width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+.backImg{
+  transition: opacity 2s, transform linear 12s;
+  position: absolute;
+  max-width: 20vw;
+  max-height: 20vw;
+  width: auto;
+  height: auto;
+  z-index: -0;
+  filter: drop-shadow(0px 0px 0.8vw white) blur(0.13vw);
+}
+
+#transitionImg{
+  position: absolute;
+  top: -15vw;
+  width: 100%;
+}
+
+#textHeader{
+  width: 100%;
+  background: #0e5c01;
+  position: absolute;
+  top: 55vw;
+  padding-bottom: 200px;
+}
+
+#whoarewe{
+  display: flex;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+#whoarewe > img{
+  margin-right: 5%;
+  border-radius: 5%;
+  width: 30%;
+  filter: drop-shadow(0px 0px 20px black);
+  height: 20%;
+  max-width: 400px;
+}
+
+#whoarewetext > h1{
+
+  font-size: 50px;
+  color: white;
+  font-family: Roboto;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-bottom: 0px;
+
+}
+
+#whoarewetext > p{
+  font-size: 30px;
+  width: 85%;
+  margin-left: 10%;
+  margin-top: 12px;
+  color: rgb(225,225,225);
+  font-family: Roboto;
+}
+
+
+#leaf1{
+  width: 50%;
+  position: absolute;
+  top: -10vw;
+  left: -18vw;
+  z-index: -1;
+  transform: scale(-0.75, 0.75)
+}
+
+#whatis{
+  display: flex;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+#whatis > img{
+  width: 25%;
+  height: 5%;
+  margin-left: 6.5%;
+  border-radius: 5%;
+  filter: drop-shadow(0px 0px 20px black);
+  max-width: 300px;
+}
+
+#whatistext > h1{
+
+  font-size: 50px;
+  color: white;
+  font-family: Roboto;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: 5%;
+
+}
+
+#whatistext > p{
+  font-size: 30px;
+  width: 80%;
+  margin-top: 12px;
+  color: rgb(225,225,225);
+  font-family: Roboto;
+  margin-left: 5%;
+}
+
+#leaf2{
+  width: 50%;
+  position: absolute;
+  top: -10vw;
+  right: -18vw;
+  z-index: -1;
+  transform: scale(0.75, 0.75)
+}
+
+
+#whocanjoin{
+  position: relative;
+  z-index: 1;
+}
+
+#whocanjoin > #backimg{
+  width: 40%;
+  border-radius: 5%;
+  filter: drop-shadow(0px 0px 20px black);
+  margin-left: 30%;
+}
+
+#whocanjoin > h1{
+
+  font-size: 50px;
+  color: white;
+  font-family: Roboto;
+  margin-top: 70px;
+  margin-left: 7.9%;
+  margin-bottom: 0px;
+
+}
+
+#whocanjoin > p{
+  font-size: 30px;
+  width: 80%;
+  margin-left: 7.9%;
+  margin-top: 12px;
+  color: rgb(225,225,225);
+  font-family: Roboto;
+}
+
+#leaf3{
+  width: 50%;
+  position: absolute;
+  top: -10vw;
+  left: -18vw;
+  z-index: -1;
+  transform: scale(-0.75, 0.75)
+}
+
+#leaf4{
+  width: 50%;
+  position: absolute;
+  top: 5vw;
+  right: -18vw;
+  z-index: -1;
+  transform: scale(0.75, 0.75)
+}
+
+.leaf{
+  opacity: 0.2;
+  filter: drop-shadow(0px 0px 5px blue)
+}
+
+h1{
+  filter: drop-shadow(0px 0px 10px black);
+}
+
+#footer{
+  width: 100%;
+  height: 135px;
+  background: rgb(12,77,1);
+  position: absolute;
+  bottom: 0px;
+  opacity: 0.8;
+}
+
+#footer > p{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  color: white;
+  font-family: Roboto;
+}
+
+.footersocialbutton > img{
+  height: 50px;
+  margin: 10px 5px 0px 5px
+}
+
+.footersocialbutton{
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.footersocialbutton:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+#socialsfooter{
+  display: flex;
+  justify-content: center;
+}
+
+#sercfooter{
+  height: 100px;
+  margin-left: 1vw;
+  margin-top: 0.75vw;
+  position: absolute;
+}
+
+.noscroll{
+  overflow: hidden;
+}
+
+#mobileNavbar{
+  display: none;
+}
+
+@media screen and (max-width: 1220px) and (min-width: 901px){
+  #textNav{
+    display: none;
+  }
+  #socials{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: lightgreen;
+    }
+    #mobileNavbar{
+      display: unset;
+    }
+    #navBar{
+      display: none !important;
+    }
+
+    #whoarewe{
+      flex-direction: column;
+      margin-top: 10px !important;
+    }
+    #whoarewetext > h1{
+      text-align: center;
+      margin-left: 0 !important;
+      font-size: 30px !important;
+      margin-top: 5px !important;
+    }
+    #whoarewetext > p{
+      font-size: 20px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 80% !important;
+      text-align: center;
+    }
+    #whoarewe > img{
+      width: 80% !important;
+      max-width: 1000px !important;
+      margin-right: 0% !important;
+    }
+    #whatis{
+      flex-direction: column-reverse;
+    }
+    #whatistext > h1{
+      font-size: 30px !important;
+      text-align: center;
+      margin-left: 0%;
+      margin-top: 0px !important;
+    }
+    #whatistext > p{
+      font-size: 20px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: center;
+    }
+    #whatis > img{
+      width: 80% !important;
+      margin-left: 0%;
+      margin-top: 10px;
+      max-width: 700px !important;
+    }
+    #whocanjoin > h1{
+      font-size: 30px !important;
+      text-align: center;
+      margin-left: 0%;
+      margin-top: 40px !important;
+    }
+    #whocanjoin > p{
+      font-size: 20px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: center;
+    }
+    #whocanjoin > #backimg{
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      display: block;
+    }
+    #textHeader{
+      top: 120vw !important;
+    }
+    .yosemiteLayer{
+      width: auto !important;
+      height: 120vw;
+      margin-left: -120px !important;
+    }
+    .leaf{
+      display: none;
+    }
+    #centerPopup{
+      top: 0px !important;
+    }
+    #centerPopup > img{
+      width: 80vw !important;
+    }
+    #centerPopup > #titleText{
+      font-size: 40px !important;
+      margin-top: -30px !important;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #centerPopup > #quoteText{
+      font-size: 25px !important;
+      margin-top: -35px !important;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #backImgs{
+      display: none !important;
+    }
+    #footer > img{
+      display: none;
+    }
+    #footer > p{
+      font-size: 15px !important;
+    }
+    #footer{
+      padding-bottom: 0px;
+    }
+    #mobileNavbar{
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 3;
+    }
+    #navOff{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      opacity: 0.75;
+    }
+    #navOff:hover{
+      opacity: 1;
+    }
+    #navOff > img{
+      width: 50px;
+      height: 50px;
+      filter: drop-shadow(0px 0px 10px black);
+    }
+    #navShown{
+      width: 100%;
+      background: rgb(12,77,1);
+      height: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      box-shadow: 0px 0px 25px black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: left 0.5s;
+      left: -120%;
+    }
+    #mobileNavButtons{
+      margin-top: 80px;
+    }
+    #socials{
+      position: relative !important;
+      right: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      top: 60px;
+    }
+    .navButton{
+        width: 300px !important;
+        height: 70px !important;
+        font-size: 30px !important;
+        margin-bottom: 20px;
+    }
+    #textNav{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      top: 35px;
+    }
+    #textNav > img{
+      position: relative;
+    }
+
+    #berkeleyLogo{
+      position: relative;
+      left: -15px;
+      height: 60px;
+    }
+    #ehaLogo{
+      position: relative;
+      height: 80px;
+      left: 0px;
+    }
+
+    .socialbutton > img{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    #closeButton{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 2;
+    }
+    #closeButton > img{
+      opacity: 0.35;
+      width: 40px;
+      height: 40px;
+    }
+    #closeButton > img:hover{
+      opacity: 0.75;
+    }
+    #pageCaption{
+      font-size: 55px !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      top: unset !important;
+    }
+
+    #aboutSpacer{
+      height: 100vw !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .aboutSection > h1{
+      font-size: 30px !important;
+      text-align: center;
+      margin-left: 0% !important;
+      margin-top: 40px !important;
+      width: 90%;
+      position: relative;
+      left: 5%;
+    }
+
+    .aboutSection > p{
+      font-size: 20px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: center;
+      width: 90% !important;
+    }
+
+    .members{
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px !important;
+    }
+    .memberSection{
+      width: 80% !important;
+      margin-bottom: 30px;
+    }
+
+    #slideInformation > h1{
+      font-size: 30px !important;
+    }
+
+    .iframeContain{
+      width: 90vw !important;
+      height: 60vw !important;
+      border-radius: 15px !important;
+    }
+
+    .iframeContain > iframe{
+      width: 90vw !important;
+      height: 60vw !important;
+      border-radius: 15px !important;
+    }
+
+}
