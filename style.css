@@ -3,7 +3,9 @@ body{
   margin: 0;
 }
 
-
+:root {
+  color-scheme: dark;
+}
 
 .nomouse{
   user-select: none;
