@@ -462,6 +462,7 @@ h1{
       text-align: left;
       overflow-wrap: break-word;
       hyphens: auto;
+      text-shadow: 0px 0px 10px black;
     }
     #whoarewe > img{
       width: 80% !important;
@@ -486,6 +487,7 @@ h1{
       text-align: left;
       overflow-wrap: break-word;
       hyphens: auto;
+      text-shadow: 0px 0px 10px black;
     }
     #whatis > img{
       width: 80% !important;
@@ -507,6 +509,7 @@ h1{
       text-align: left;
       overflow-wrap: break-word;
       hyphens: auto;
+      text-shadow: 0px 0px 10px black;
     }
     #whocanjoin > #backimg{
       margin-left: auto;
@@ -651,6 +654,7 @@ h1{
       margin-top: 0 !important;
       margin-bottom: 0 !important;
       top: unset !important;
+      text-shadow: 0px 0px 10px black;
     }
 
     #aboutSpacer{
@@ -678,6 +682,7 @@ h1{
       text-align: left;
       overflow-wrap: break-word;
       hyphens: auto;
+      text-shadow: 0px 0px 10px black;
     }
 
     .members{
