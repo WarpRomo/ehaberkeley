@@ -94,7 +94,7 @@ function yosemiteParallax(event){
 
     if(scrollAmount < 0) power = -1;
 
-    e.style.transform = `translate3d(0, ${scrollAmount*yosemitePower[i]}px, 0)`;
+    e.style.transform = `translate3d(0, ${scrollAmount*power}px, 0)`;
 
   }
 }
