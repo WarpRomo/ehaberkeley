@@ -90,6 +90,8 @@ function yosemiteParallax(event){
 
     let scrollAmount = window.scrollY;
 
+    if(scrollAmount < 0) return;
+
     e.style.transform = `translate3d(0, ${scrollAmount*yosemitePower[i]}px, 0)`;
 
   }

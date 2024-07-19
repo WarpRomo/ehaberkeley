@@ -48,7 +48,7 @@ body{
   font-size: 20px;
   padding: 5px;
   border-radius: 10px;
-  font-family: Roboto;
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +92,7 @@ body{
   font-size: 30px;
   margin: 0px;
   color: white;
-  font-family: Roboto;
+  font-family: "Roboto";
   position: relative;
   top: 28px;
   text-align: center;
@@ -172,7 +172,7 @@ body{
 #centerPopup > #titleText{
   font-size: 2vw;
   color: white;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: bold;
   margin-top: -2vw;
   filter: drop-shadow(0px 0px 2px white);
@@ -181,7 +181,7 @@ body{
 #centerPopup > #quoteText{
   font-size: 1.5vw;
   color: white;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-top: -2vw;
   filter: drop-shadow(0px 0px 5px white);
 }
@@ -239,7 +239,7 @@ body{
 
   font-size: 50px;
   color: white;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-top: 40px;
   margin-left: 10%;
   margin-bottom: 0px;
@@ -252,7 +252,7 @@ body{
   margin-left: 10%;
   margin-top: 12px;
   color: rgb(225,225,225);
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
 
@@ -286,7 +286,7 @@ body{
 
   font-size: 50px;
   color: white;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-top: 40px;
   margin-bottom: 0px;
   margin-left: 5%;
@@ -298,7 +298,7 @@ body{
   width: 80%;
   margin-top: 12px;
   color: rgb(225,225,225);
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-left: 5%;
 }
 
@@ -328,7 +328,7 @@ body{
 
   font-size: 50px;
   color: white;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-top: 70px;
   margin-left: 7.9%;
   margin-bottom: 0px;
@@ -341,7 +341,7 @@ body{
   margin-left: 7.9%;
   margin-top: 12px;
   color: rgb(225,225,225);
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
 #leaf3{
@@ -386,7 +386,7 @@ h1{
   margin-top: 25px;
   margin-bottom: 0px;
   color: white;
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
 .footersocialbutton > img{
@@ -434,9 +434,7 @@ h1{
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        background-color: lightgreen;
-    }
+
     #mobileNavbar{
       display: unset;
     }
