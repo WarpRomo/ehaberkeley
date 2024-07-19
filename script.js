@@ -15,9 +15,11 @@ window.addEventListener("scroll", (event) => {
     document.getElementById("navBar").classList.remove("nomouse");
   }
 
-  yosemiteParallax(event)
+  //yosemiteParallax(event)
 
 })
+
+setInterval(yosemiteParallax, 10);
 
 setTimeout(() => {
   backInterval();
@@ -35,6 +37,7 @@ function mobileClose(){
 }
 
 let imageSpots = new Set();
+let usedImages = new Set();
 
 function backInterval(){
   if(backgroundImages.length > 0){
@@ -46,6 +49,7 @@ function backInterval(){
       setTimeout(() => {
         oldImg.remove();
         imageSpots.delete(spot);
+        usedImages.delete(index);
       }, 2000)
     }, 2300)
 
@@ -53,10 +57,18 @@ function backInterval(){
 
   while(backgroundImages.length < 2){
     let newImg = document.createElement("img")
-    newImg.src = "./backImgs/r" + (Math.floor(Math.random() * 22) + 2) + ".jpg";
+    let index = (Math.floor(Math.random() * 22) + 2);
+    let k = 0;
+    while((k < 50) && usedImages.has(index)){
+      index = (Math.floor(Math.random() * 22) + 2);
+      k++;
+    }
+    usedImages.add(index);
+
+    newImg.src = "./backImgs/r" + index + ".jpg";
     newImg.classList.add("backImg")
     newImg.style.opacity = 0;
-    newImg.style.transform = "translate3d(0vw, 0vw, 0vw)"
+    newImg.style.transform = "translate3d(0vw, 0vw, 0vw) scale(1.5)"
 
     let horizontal = 0;
 
@@ -75,10 +87,10 @@ function backInterval(){
     newImg.style.top = (10) + "vw"
     setTimeout(() => {
       newImg.style.opacity = 0.4;
-      newImg.style.transform = "translate3d(0vw, 5vw, 0vw)"
+      newImg.style.transform = "translate3d(0vw, 5vw, 0vw) scale(1.5)"
     }, 100)
     backImgs.appendChild(newImg);
-    backgroundImages.push([newImg, horizontal]);
+    backgroundImages.push([newImg, horizontal, index]);
   }
 }
 
