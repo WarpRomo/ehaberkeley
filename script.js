@@ -53,7 +53,7 @@ function backInterval(){
 
   while(backgroundImages.length < 2){
     let newImg = document.createElement("img")
-    newImg.src = "./backImgs/r" + (Math.floor(Math.random() * 24) + 2) + ".png";
+    newImg.src = "./backImgs/r" + (Math.floor(Math.random() * 24) + 2) + ".jpg";
     newImg.classList.add("backImg")
     newImg.style.opacity = 0;
     newImg.style.transform = "translate3d(0vw, 0vw, 0vw)"
