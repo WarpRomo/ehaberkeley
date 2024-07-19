@@ -78,6 +78,7 @@ body{
   margin-top: 12px;
   color: rgb(225,225,225);
   font-family: 'Roboto', sans-serif;
+  text-shadow: 0px 0px 10px black;
 }
 
 
@@ -118,6 +119,7 @@ body{
   font-size: 20px;
   box-shadow: 0px 0px 15px 1px black;
   max-width: 400px;
+  text-shadow: 0px 0px 10px black;
 }
 
 .memberSection > p:nth-child(1){
