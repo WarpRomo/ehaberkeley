@@ -24,7 +24,7 @@ setInterval(yosemiteParallax, 10);
 setTimeout(() => {
   backInterval();
   setInterval(backInterval, 4000)
-}, 1000)
+}, 4000)
 
 
 function mobileOpen(){
@@ -110,6 +110,7 @@ function yosemiteParallax(event){
     if(e == undefined) return;
 
     e.style.transform = `translate3d(0, ${scrollAmount*power}px, 0)`;
+    e.style.opacity = 1;
 
   }
 }
