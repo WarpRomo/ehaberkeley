@@ -43,6 +43,7 @@ function backInterval(){
   if(backgroundImages.length > 0){
     let oldImg = backgroundImages.shift();
     let spot = oldImg[1];
+    let index = oldImg[2];
     oldImg = oldImg[0];
     setTimeout(() => {
       oldImg.style.opacity = 0;
@@ -105,6 +106,8 @@ function yosemiteParallax(event){
     let power = yosemitePower[i]
 
     if(scrollAmount < 0) power = -1;
+
+    if(e == undefined) return;
 
     e.style.transform = `translate3d(0, ${scrollAmount*power}px, 0)`;
 
