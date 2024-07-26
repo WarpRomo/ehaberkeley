@@ -7,6 +7,14 @@ body{
   margin: 0;
 }
 
+h1{
+  font-family: 'Artifika', sans-serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
 :root {
   color-scheme: dark;
 }
@@ -54,7 +62,7 @@ body{
   font-size: 20px;
   padding: 5px;
   border-radius: 10px;
-  font-family: 'Roboto', sans-serif;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +106,7 @@ body{
   font-size: 30px;
   margin: 0px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+
   position: relative;
   top: 28px;
   text-align: center;
@@ -176,18 +184,19 @@ body{
 }
 
 #centerPopup > #titleText{
-  font-size: 2vw;
+  font-size: 1.7vw;
   color: white;
-  font-family: 'Roboto', sans-serif;
+
   font-weight: bold;
   margin-top: -2vw;
   filter: drop-shadow(0px 0px 2px white);
+  margin-bottom: 2vw;
 }
 
 #centerPopup > #quoteText{
   font-size: 1.5vw;
   color: white;
-  font-family: 'Roboto', sans-serif;
+
   margin-top: -2vw;
   filter: drop-shadow(0px 0px 5px white);
 }
@@ -245,7 +254,7 @@ body{
 
   font-size: 50px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+
   margin-top: 40px;
   margin-left: 10%;
   margin-bottom: 0px;
@@ -258,7 +267,7 @@ body{
   margin-left: 10%;
   margin-top: 12px;
   color: rgb(225,225,225);
-  font-family: 'Roboto', sans-serif;
+
   text-shadow: 0px 0px 10px black;
 }
 
@@ -293,7 +302,7 @@ body{
 
   font-size: 50px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+
   margin-top: 40px;
   margin-bottom: 0px;
   margin-left: 5%;
@@ -305,7 +314,7 @@ body{
   width: 80%;
   margin-top: 12px;
   color: rgb(225,225,225);
-  font-family: 'Roboto', sans-serif;
+
   margin-left: 5%;
   text-shadow: 0px 0px 10px black;
 }
@@ -336,7 +345,7 @@ body{
 
   font-size: 50px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+
   margin-top: 70px;
   margin-left: 7.9%;
   margin-bottom: 0px;
@@ -349,7 +358,7 @@ body{
   margin-left: 7.9%;
   margin-top: 12px;
   color: rgb(225,225,225);
-  font-family: 'Roboto', sans-serif;
+
   text-shadow: 0px 0px 10px black;
 }
 
@@ -395,7 +404,7 @@ h1{
   margin-top: 25px;
   margin-bottom: 0px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+
 }
 
 .footersocialbutton > img{
@@ -539,10 +548,11 @@ h1{
       width: 80vw !important;
     }
     #centerPopup > #titleText{
-      font-size: 40px !important;
+      font-size: 30px !important;
       margin-top: -30px !important;
       margin-left: 20px;
       margin-right: 20px;
+      margin-bottom: 45px;
     }
     #centerPopup > #quoteText{
       font-size: 25px !important;
