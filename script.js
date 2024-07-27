@@ -21,10 +21,12 @@ window.addEventListener("scroll", (event) => {
 
 setInterval(yosemiteParallax, 10);
 
-setTimeout(() => {
-  backInterval();
-  setInterval(backInterval, 4000)
-}, 4000)
+document.addEventListener("DOMContentLoaded", (event) => {
+  setTimeout(() => {
+    backInterval();
+    setInterval(backInterval, 4000)
+  }, 2000)
+})
 
 
 function mobileOpen(){
