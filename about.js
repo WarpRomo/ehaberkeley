@@ -1,19 +1,5 @@
 let aboutBackground;
 
-window.addEventListener("scroll", (event) => {
-  /*
-  if(window.scrollY > 180){
-    document.getElementById("navBar").style.opacity = 0;
-  }
-  else{
-    document.getElementById("navBar").style.opacity = 1;
-  }
-  */
-
-  aboutParallax(event);
-
-})
-
 function aboutParallax(event){
   console.log("scrolled");
 
@@ -32,5 +18,11 @@ window.addEventListener("load", (event) => {
   aboutBackground = document.getElementById("aboutBackground");
 
   aboutParallax();
+
+  window.addEventListener("scroll", (event) => {
+
+    aboutParallax(event);
+
+  })
 
 })
