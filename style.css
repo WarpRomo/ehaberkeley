@@ -7,13 +7,10 @@ body{
   margin: 0;
 }
 
-h1{
-  font-family: 'Artifika', sans-serif;
+h1,p{
+  font-family: 'Neucha', sans-serif;
 }
 
-p{
-  font-family: 'Roboto', sans-serif;
-}
 
 :root {
   color-scheme: dark;
@@ -59,7 +56,7 @@ p{
   width: 115px;
   height: 30px;
   text-align: center;
-  font-size: 20px;
+  font-size: 23px;
   padding: 5px;
   border-radius: 10px;
 
@@ -184,7 +181,7 @@ p{
 }
 
 #centerPopup > #titleText{
-  font-size: 1.7vw;
+  font-size: 2vw;
   color: white;
 
   font-weight: bold;
@@ -194,7 +191,7 @@ p{
 }
 
 #centerPopup > #quoteText{
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   color: white;
 
   margin-top: -2vw;
@@ -233,9 +230,13 @@ p{
   padding-bottom: 200px;
 }
 
+#whoarewetext > p, #whatistext > p, #whocanjoin > p{
+  font-size: 32px;
+}
+
 #whoarewe{
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
   z-index: 1;
   align-items: center;
@@ -262,7 +263,6 @@ p{
 }
 
 #whoarewetext > p{
-  font-size: 30px;
   width: 85%;
   margin-left: 10%;
   margin-top: 12px;
@@ -310,7 +310,6 @@ p{
 }
 
 #whatistext > p{
-  font-size: 30px;
   width: 80%;
   margin-top: 12px;
   color: rgb(225,225,225);
@@ -353,7 +352,6 @@ p{
 }
 
 #whocanjoin > p{
-  font-size: 30px;
   width: 80%;
   margin-left: 7.9%;
   margin-top: 12px;
@@ -548,7 +546,7 @@ h1{
       width: 80vw !important;
     }
     #centerPopup > #titleText{
-      font-size: 30px !important;
+      font-size: 38px !important;
       margin-top: -30px !important;
       margin-left: 20px;
       margin-right: 20px;
