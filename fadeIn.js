@@ -1,6 +1,7 @@
-//window.addEventListener("load", (event) => {
+fadeInCenter();
+document.addEventListener("DOMContentLoaded", (event) => {
   fadeInCenter();
-//})
+})
 
 
 function fadeInCenter(){
